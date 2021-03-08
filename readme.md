@@ -12,4 +12,4 @@ Simple webpack 5 config for small project in 2021
 
 P.S. babel config works only in production mode (for optimization)
 
-press :fa-star: button if it was useful:tw-1f44c:
+press star button if it was useful=)
