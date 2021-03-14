@@ -1,5 +1,4 @@
 import "./styles/main.scss";
-import { app } from "./scripts/app.module";
+import { runConsole } from "./scripts/app";
 
-app();
-console.log("MY START in WebPack");
+runConsole("MY START in WebPack");

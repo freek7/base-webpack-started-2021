@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const indexData = require("./src/stub_data/index.data");
+const indexData = require("./src/templates/stub_data/index.data");
 
 module.exports = [
   new HtmlWebpackPlugin({
