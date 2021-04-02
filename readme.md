@@ -6,8 +6,3 @@ Simple webpack 5 config for small project in 2021
 
 ### run development server:
 `npm run dev`
-
-------------
-
-
-P.S. babel config works only in production mode (for optimization)
