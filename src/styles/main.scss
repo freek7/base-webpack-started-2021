@@ -1,3 +1,6 @@
 @import "./modules/reset";
 @import "./modules/fonts";
 @import "./modules/layout";
+*{
+  transform: scale(0.5);
+}

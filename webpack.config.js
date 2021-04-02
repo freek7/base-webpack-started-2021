@@ -2,7 +2,6 @@ const path = require("path");
 const miniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
-const babelConf = require("./babel.conf");
 const templates = require("./templates");
 
 module.exports = (evn, arg) => {
@@ -27,7 +26,15 @@ module.exports = (evn, arg) => {
     module: {
       rules: [
         // rules for js
-        isProd ? { ...babelConf } : {},
+        {
+          test: /\.js$/i,
+          exclude: /(node_modules)/,
+          use: [
+            {
+              loader: "babel-loader",
+            },
+          ],
+        },
         // rules for styles
         {
           test: /\.(css|sass|scss)$/i,
@@ -82,7 +89,7 @@ module.exports = (evn, arg) => {
           },
         ],
       }),
-      
+
     ],
   };
 };
